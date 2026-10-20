@@ -1,0 +1,20 @@
+//основное содержание страницы
+.main-content {
+  background-color: transparent;
+}
+
+.main-content__title {
+  margin-top: 27px;
+}
+
+@media (min-width: $width-tablet) {
+  .main-content__title {
+    margin-top: 65px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-content__title {
+    margin-top: 78px;
+  }
+}

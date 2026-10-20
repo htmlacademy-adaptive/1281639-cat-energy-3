@@ -1,0 +1,55 @@
+//блок подвал
+.footer {
+  background-color: $bg-color-secondary;
+}
+
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__social-list {
+  min-width: 100%;
+}
+
+.footer__copyright {
+  min-width: 100%;
+}
+
+@media (min-width: $width-tablet) {
+  .footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 37px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .footer__logo {
+    margin-top: 1px;
+    margin-right: 38px;
+  }
+
+  .footer__social-list {
+    min-width: 132px;
+  }
+
+  .footer__copyright {
+    min-width: 168px;
+    max-width: 280px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .footer__wrapper {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+}
